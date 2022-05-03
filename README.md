@@ -5,5 +5,4 @@
 If you wish to use any part of this repo or code please feel free to give me credit.</p>
 
 
-
-![Screenshot 2022-05-02 175113](https://user-images.githubusercontent.com/76221708/166391230-1645eca2-2068-4652-9768-3378a38e413a.png)
+![Google_Clone](https://user-images.githubusercontent.com/76221708/166502831-738517a7-1f92-4ff1-8097-e396a0fe0d89.png)
