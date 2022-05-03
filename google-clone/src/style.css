@@ -1,0 +1,417 @@
+
+
+/* Dont apply browsers defualt margin */
+*{
+    margin: 0;
+}
+
+/* Target the main body and display in the flexc direction of column */
+ body {
+    display: flex;
+    flex-direction: column;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    
+    
+    user-zoom: auto;
+    perspective: 0ex;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    height: 100vh;
+}
+
+.Account_Circle{
+    color: gray
+}
+
+@media (min-width: 598px) {
+    #hamburger-menu {
+        display: none;
+    }
+
+    .Main {
+        display: inline;
+    }
+
+    .button {
+        height: 8em;
+    }
+
+    .Icons {
+        height: 350px;
+        width: 500px;
+    }
+    
+}
+
+
+/* Header styles  */
+.Main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    align-items: center;
+    inherits: none;
+    box-decoration-break: slice;
+    transform-style: flat;
+    shape-image-threshold: calc(10,20,30,40);
+    -ms-transform-origin-y: 0ex;
+    quotes: none;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    clip-rule: evenodd;
+    clip-path: fill-box;
+    color-interpolation-filters: linearRGB;
+    opacity: none;
+    text-transform: none;
+    column-rule-color: aqua;
+
+}
+.Search_Text_Fields{
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgray;
+    overflow-y: visible;
+    height: 30px;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    border-radius: 999px;
+    quotes: none;
+    clip-rule: evenodd;
+    clip-path: fill-box;
+    color-interpolation-filters: linearRGB;
+    place-content: none;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    quotes: none;
+    border-inline: center;
+    width: 75vw;
+    margin: 0 auto;
+    margin-top: 10px;
+    max-width: 560px;
+    counter-reset: none;
+    justify-self: auto;
+    text-justify: distribute-all-lines;
+    padding: 10px 20px;
+    text-decoration-skip: all;
+    justify-content: space-between;
+    inset: none;
+    mask-position: 0%;
+    isolation: auto;
+}
+
+.Main a{
+    margin-right: 20px;
+    font-size: 18px;
+    text-decoration: inherit;
+    quotes: none;
+    clip-rule: evenodd;
+    clip-path: fill-box;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    color-interpolation-filters: linearRGB;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    color: rgba(0,0,0,1.33);
+    
+}
+
+.Left{
+    margin-right: 20px;
+    font-size: 18px;
+    text-decoration: inherit;
+    quotes: none;
+    clip-rule: evenodd;
+    clip-path: fill-box;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    color-interpolation-filters: linearRGB;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    color: rgba(0,0,0,1.33);
+    
+}
+
+.Main a:hover{
+    text-decoration: underline;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    image-orientation: from-image;
+    align-self: none;
+    ruby-align: distribute-letter;
+    text-justify: inter-word;
+    opacity: none;
+    overflow-y: hidden;
+    quotes: unset;
+    align-self: start;
+    background-position-y: top;
+    mask-type: alpha;
+    text-emphasis-position: none;
+    justify-items: auto;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    enable-background: new;
+    quotes: none;
+}
+
+.Under_SearchBar button{
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: whitesmoke;
+    outline: none;
+    border: none;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    hanging-punctuation: remove;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    transform-origin: 0%;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-name: inherit;
+    -webkit-backface-visibility: hidden;
+    cursor: pointer;
+
+}
+
+.Right{
+    display: flex;
+    align-items: center;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    quotes: unset;
+    align-self: start;
+    background-position-y: top;
+    text-justify: inter-word;
+    opacity: none;
+    overflow-y: hidden;
+    mask-type: alpha;
+    text-emphasis-position: none;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.All{
+    flex: 1;
+    display: flex;
+    margin-top: 1%;
+    quotes: unset;
+    align-self: start;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    background-position-y: top;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    flex-direction: column;
+    justify-content: space-around;
+}
+img{
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    font-variant: initial;
+    font-kerning: normal;
+    align-items: center;
+    object-fit: contain;
+    height: 250px;
+}
+
+
+.Search_bar input{
+    flex: 1;
+    padding: 10px 20px;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: gray;
+    quotes: unset;
+    align-self: start;
+    background-position-y: top;
+    border: none;
+    outline: none;
+}
+
+.Search_Text_Fields span{
+    color: gray;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    font-variant: initial;
+    font-kerning: normal;
+
+}
+
+.Under_SearchBar{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+}
+
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    overflow: -moz-hidden-unscrollable;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    hanging-punctuation: remove;
+    transform-origin: 0%;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-name: inherit;
+    -webkit-backface-visibility: hidden;
+    align-content: stretch;
+    margin-top: 8%;
+}
+
+address{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    hanging-punctuation: remove;
+    transform-origin: 0%;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-name: inherit;
+    -webkit-backface-visibility: hidden;
+    margin-left: 10px;
+    padding: 10px 15px;
+}
+.Contact{
+    justify-content: space-evenly;
+    hanging-punctuation: remove;
+    transform-origin: 0%;
+    -webkit-animation-fill-mode: none;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    -webkit-animation-name: inherit;
+    -webkit-backface-visibility: hidden;
+    display: flex;
+    padding: 10px 150px;
+}
+
+.Calender{
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px 150px;
+    hanging-punctuation: remove;
+    transform-origin: 0%;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    -webkit-animation-name: inherit;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation-fill-mode: none;
+    -webkit-animation-name: inherit;
+    -webkit-backface-visibility: hidden;
+}
+
+.CashApp{
+    display: flex;
+    justify-content: center;
+    overflow: -moz-hidden-unscrollable;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    padding: 10px 15px;
+}
+
+footer p{
+    display: flex;
+    padding: 10px 15px;
+    overflow: -moz-hidden-unscrollable;
+    line-clamp: none;
+    isolation: isolate;
+    user-select: auto;
+    user-zoom: auto;
+    perspective: 0ex;
+    hanging-punctuation: remove;
+    orphans: unset;
+    scroll-padding-top: 0;
+    lighting-color: whitesmoke;
+    margin-top: 12px
+}
