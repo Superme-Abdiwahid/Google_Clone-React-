@@ -12,7 +12,7 @@ export default class Search_Fields extends React.Component{
         <div className="Search_Text_Fields">
           <SearchIcon onClick={Search}/>
           <label for="Text">
-          <input type="text" onChange={Target} id="Text"/>
+          <input type="text" onChange={Target} placeholder="Search Google or Type a url.." id="Text"/>
           </label>
           <MicIcon />
         </div>
@@ -24,7 +24,6 @@ export default class Search_Fields extends React.Component{
         )
     }
 }
-
 
 const Target = (event) =>{
     let input = event.target.value;
