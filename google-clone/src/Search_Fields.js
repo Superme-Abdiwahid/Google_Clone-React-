@@ -3,6 +3,7 @@ import './style.css'
 import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
+let inputSearchValue = '';
 export default class Search_Fields extends React.Component{
     render(){
         return(
@@ -27,10 +28,37 @@ export default class Search_Fields extends React.Component{
 
 const Target = (event) =>{
     let input = event.target.value;
-    
+    console.log('Input Value', input);
+    inputSearchValue = input;
     return input
 }
 
+
+window.addEventListener('keypress', function (e) {
+  if (e.key === 'Enter') {
+    console.log(getResponse('https://www.google.com/search?gs_ssp=eJzj4tTP1TewzEouK1ZgNGB0YPBir8wvLSlNSgUAUQAG7g&q=' + inputSearchValue + '&oq=y&aqs=chrome.1.69i60j46i39i199i291j69i57j46i131i199i433i465i512j69i60j69i61j69i60l2.1145j0j7&sourceid=chrome&ie=UTF-8'))
+    window.location.href =  'https://www.google.com/search?gs_ssp=eJzj4tTP1TewzEouK1ZgNGB0YPBir8wvLSlNSgUAUQAG7g&q=' + inputSearchValue + '&oq=y&aqs=chrome.1.69i60j46i39i199i291j69i57j46i131i199i433i465i512j69i60j69i61j69i60l2.1145j0j7&sourceid=chrome&ie=UTF-8'
+
+  }
+});
+
+
+window.addEventListener('click', (event) =>{
+  console.log(event)
+})
+
+
+async function getResponse(event) {
+  fetch(event)
+  .then(event =>{
+    return event.json();
+  })
+  console.log(event)
+}
+
 const Search =  (value) =>{
-    window.location.href =  'https://www.google.com/search?gs_ssp=eJzj4tTP1TewzEouK1ZgNGB0YPBir8wvLSlNSgUAUQAG7g&q=youtube&oq=y&aqs=chrome.1.69i60j46i39i199i291j69i57j46i131i199i433i465i512j69i60j69i61j69i60l2.1145j0j7&sourceid=chrome&ie=UTF-8'
+  console.log('Value on Search', inputSearchValue);
+  fetch()
+  
+  window.location.href =  'https://www.google.com/search?gs_ssp=eJzj4tTP1TewzEouK1ZgNGB0YPBir8wvLSlNSgUAUQAG7g&q=' + inputSearchValue + '&oq=y&aqs=chrome.1.69i60j46i39i199i291j69i57j46i131i199i433i465i512j69i60j69i61j69i60l2.1145j0j7&sourceid=chrome&ie=UTF-8'
 }
