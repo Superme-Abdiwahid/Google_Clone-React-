@@ -21,13 +21,13 @@ export default class Headers extends React.Component{
         return(
     <div class="Main">
       <div className="header_left">
-        <div class="Left"> <a>About</a>
-        <a>Store</a>
+        <div class="Left"> <a href="#" onClick={AboutGoogle}>About</a>
+        <a href="#" onClick={GoogleStore}> Store</a>
         </div>
       </div>
       <div className="Right">
-        <a href="#" >Gmail</a>
-        <a href="#">Images</a>
+        <a href="#" onClick={Gmail} >Gmail</a>
+        <a href="#" onClick={GoogleImages} >Images</a>
         <AppsIcon className="Apps" />
         <AccountCircleIcon className='Account_Circle' />
       </div>
@@ -36,62 +36,19 @@ export default class Headers extends React.Component{
     }
 }
 
-
-
-export function SignUP(props){
-    const [user, setUser] = useState('');
-        const uiConfig = {
-          signInOptions: [{ provider: firebase.auth.EmailAuthProvider.PROVIDER_ID, requireDisplayName: true },
-          firebase.auth.GoogleAuthProvider.PROVIDER_ID], credentialHelper: 'none', signInFlow: 'popup',
-          callbacks: {
-            signInSuccessWithAuthResult: () => false,
-          },
-      
-        };
-    useEffect(() => {
-        const registerUser = firebase.auth().onAuthStateChanged((firebaseUser) => {
-          if (firebaseUser) {
-            setUser(firebaseUser);
-          } else {
-            setUser(null);
-          }
-    
-        })
-        return function unRemove() {
-          registerUser();
-        }
-      })
-      const handleSignOut = () => {
-        firebase.auth().signOut();
-    
-      }
+const AboutGoogle = (event) =>{
+  window.location.href= "https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header";
 }
 
-//an object of configuration values
-const firebaseUIConfig = {
-    signInOptions: [ 
-      GoogleAuthProvider.PROVIDER_ID,
-      { provider: EmailAuthProvider.PROVIDER_ID, requiredDisplayName: true },
-    ],
-    signInFlow: 'popup', 
-    credentialHelper: 'none',
-    callbacks: { 
-      signInSuccessWithAuthResult: () => {
-        return false; 
-      }
-    }
-  }
-  
-  //the React compnent to render
-  function MySignInScreen() {
-  
-    const auth = getAuth(); //access the "authenticator"
-  
-    return (
-      <div>
-        <h1>My App</h1>
-        <p>Please sign-in:</p>
-        <StyledFirebaseAuth uiConfig={firebaseUIConfig} firebaseAuth={auth} />
-      </div>
-    );
-  }
+
+const GoogleStore = (event) =>{
+  window.location.href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US&pli=1";
+}
+
+const GoogleImages = (event) =>{
+  window.location.href = 'https://www.google.com/imghp?hl=en&tab=ri&authuser=0&ogbl}';
+}
+
+const Gmail = (event) => {
+  window.location.href = "https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox";
+}
